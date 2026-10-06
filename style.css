@@ -3,13 +3,11 @@
    Theme: UCLA (Bruin Blue #2774AE & Gold #FFB81C) + Stanford (Cardinal #8C1515)
    ========================================================================== */
 
-/* Color Variables */
 :root {
   --ucla-blue: #2774ae;
   --ucla-gold: #ffb81c;
   --stanford-cardinal: #8c1515;
   --stanford-dark-cardinal: #5e0d0d;
-  --accent-gold: #d4a017;
   --bg-light: #f8fafc;
   --card-bg: #ffffff;
   --text-primary: #1a202c;
@@ -17,7 +15,7 @@
   --border-color: #e2e8f0;
 }
 
-/* Global Reset & Base Styles */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +33,7 @@ body {
   background-color: var(--bg-light);
 }
 
-/* Navigation Bar (UCLA Blue Base with Gold Accent) */
+/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -53,7 +51,6 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
-  letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -74,7 +71,7 @@ body {
   color: var(--ucla-gold);
 }
 
-/* Hero Header (Stanford Cardinal Gradient with Gold Accent) */
+/* Hero Header */
 .hero {
   background: linear-gradient(135deg, var(--stanford-cardinal) 0%, var(--stanford-dark-cardinal) 100%);
   color: #ffffff;
@@ -87,12 +84,10 @@ body {
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 0.4rem;
-  letter-spacing: -0.5px;
 }
 
 .hero p {
   font-size: 1.25rem;
-  color: #f7fafc;
 }
 
 .hero .tagline {
@@ -119,13 +114,31 @@ body {
 .btn:hover {
   background-color: #e5a312;
   transform: translateY(-2px);
-  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
 
-/* Section Container */
+/* Publication Button */
+.pub-btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--stanford-cardinal);
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.pub-btn:hover {
+  background-color: var(--stanford-dark-cardinal);
+  color: var(--ucla-gold);
+}
+
+/* Main Section Layout */
 .section {
   padding: 3.5rem 8%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -138,10 +151,10 @@ body {
   display: inline-block;
 }
 
-/* Projects Grid */
+/* Project Cards Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
   margin-top: 1rem;
 }
@@ -174,15 +187,15 @@ body {
 .project-card p {
   color: var(--text-muted);
   font-size: 0.95rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-/* Tech Tags (UCLA Blue Background with Gold Text Accent) */
+/* Tech Tags */
 .tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .tech-tag {
@@ -195,45 +208,57 @@ body {
   border-radius: 20px;
 }
 
-/* Project Media (Images and Videos) */
+/* Project Media Elements */
 .project-media {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: auto;
+  margin-top: 1rem;
 }
 
 .project-img,
-.project-video,
-.project-video-2 {
+.project-video {
   width: 100%;
-  max-height: 260px;
+  max-height: 280px;
   border-radius: 8px;
   object-fit: cover;
   border: 1px solid var(--border-color);
   background-color: #000000;
 }
 
-/* Embedded YouTube Video Container */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
+/* Multi-Image Grids */
+.image-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.image-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.image-grid-8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.grid-img {
   width: 100%;
-  height: 100%;
-  border: 0;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease;
 }
 
-/* Resource Blocks (Resume & Presentations) */
+.grid-img:hover {
+  transform: scale(1.03);
+}
+
+/* Resource Blocks */
 .resource-block {
   background: var(--card-bg);
   padding: 1.8rem;
@@ -246,12 +271,6 @@ body {
 .resource-block h3 {
   color: var(--stanford-cardinal);
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.resource-block p {
-  color: var(--text-muted);
-  margin-bottom: 1rem;
 }
 
 .pdf-viewer {
@@ -262,7 +281,7 @@ body {
   background-color: #e2e8f0;
 }
 
-/* Contact Section & Buttons */
+/* Contact Section */
 .contact-links {
   display: flex;
   gap: 1rem;
@@ -296,7 +315,7 @@ footer {
   border-top: 3px solid var(--ucla-gold);
 }
 
-/* Responsive Navigation for Mobile Screens */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -307,11 +326,7 @@ footer {
     gap: 1rem;
   }
 
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .section {
-    padding: 2.5rem 5%;
+  .image-grid-8 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
