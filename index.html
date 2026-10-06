@@ -40,49 +40,109 @@
     <h2>Engineering Projects</h2>
     <div class="project-grid">
 
-      <!-- Project 1: UCLA FSAE -->
+      <!-- Project 1: Heat-Activated Deployable Structures (NEW) -->
       <div class="project-card">
-        <h3>UCLA FSAE - Bruin Racing</h3>
-        <p>Worked on battery pack cooling system for electric racecar. Designed ducts, calculated fan curve operating points, tested hydrophobic mesh, performed basic CFD analysis on cell segments.</p>
-        
-        <div class="tags-container">
-          <span class="tech-tag">SolidWorks</span>
-          <span class="tech-tag">Siemens Star CCM+ CFD</span>
-          <span class="tech-tag">MATLAB</span>
+        <div>
+          <h3>Heat-Activated Deployable Structures</h3>
+          <p>Combined heat-shrinkable thermoplastics with 3D printed planar shapes to generate specific folded 3D structures, published to AEM.</p>
+          
+          <div class="tags-container">
+            <span class="tech-tag">Kirigami</span>
+            <span class="tech-tag">3D Printing</span>
+            <span class="tech-tag">Soft Robotics</span>
+          </div>
+
+          <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adem.202502378" target="_blank" rel="noopener noreferrer" class="pub-btn">
+            View Publication (AEM) &rarr;
+          </a>
         </div>
 
-        <!-- Media Section -->
         <div class="project-media">
-          <!-- Image Placeholder -->
-          <img src="images/fsae-cooling-cad.jpg" alt="FSAE Battery Pack Cooling CAD" class="project-img" />
-          
-          <!-- Option A: Direct Video Upload (.mp4) -->
-          <video controls class="project-video">
-            <source src="videos/fsae-testing.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <!-- Option B: Embedded YouTube Video (Uncomment to use instead of <video>) -->
-          <!--
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-          </div>
-          -->
+          <img src="images/heat-deployable-1.jpg" alt="Heat-Activated Deployable Structure" class="project-img" />
         </div>
       </div>
 
-      <!-- Project 2: Capstone Burger Robot -->
+      <!-- Project 2: Collaborative Robotics Experiments (NEW) -->
       <div class="project-card">
-        <h3>Autonomous Burger Assembly/Delivery Robot - UCLA Capstone</h3>
-        <p>Built and programmed an autonomous differential-drive robot to perform LiDAR-based course navigation, computer vision-guided customer recognition, and mechanical manipulation for burger assembly that ranked first in the capstone class.</p>
-        
-        <div class="tags-container">
-          <span class="tech-tag">ROS2</span>
-          <span class="tech-tag">LiDAR</span>
-          <span class="tech-tag">Robotics</span>
+        <div>
+          <h3>Collaborative Robotics Experiments</h3>
+          <p>Worked on end-effectors (design, fabrication, rapid prototyping) for experiments with slinky manipulation and created basic python move functions for LLM to access as “toolbox”.</p>
+          
+          <div class="tags-container">
+            <span class="tech-tag">ROS2</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Robotics</span>
+            <span class="tech-tag">Design for 3D Printing</span>
+          </div>
         </div>
 
-        <!-- Media Section -->
+        <div class="project-media">
+          <img src="images/end-effectors.png" alt="End-Effector Design for Slinky Manipulation" class="project-img" />
+          <video controls class="project-video">
+            <source src="videos/sawyerrobot.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- Project 3: Multi-Modal Hidden Object Detection (NEW) -->
+      <div class="project-card">
+        <div>
+          <h3>Multi-Modal Hidden Object Detection</h3>
+          <p>Sensor fusion approach to detecting occluded fruits, worked on sensor module and experiments with thermal change.</p>
+          
+          <div class="tags-container">
+            <span class="tech-tag">Sensor Hardware</span>
+            <span class="tech-tag">Thermal Cameras</span>
+            <span class="tech-tag">Rapid Prototyping</span>
+          </div>
+        </div>
+
+        <div class="project-media">
+          <img src="images/experiment.jpeg" alt="Multi-Modal Thermal Sensor Fusion" class="project-img" />
+        </div>
+      </div>
+
+      <!-- Project 4: UCLA FSAE (UPDATED: 8 Image Grid, No Videos) -->
+      <div class="project-card">
+        <div>
+          <h3>UCLA FSAE - Bruin Racing</h3>
+          <p>Worked on battery pack cooling system for electric racecar. Designed ducts, calculated fan curve operating points, tested hydrophobic mesh, performed basic CFD analysis on cell segments.</p>
+          
+          <div class="tags-container">
+            <span class="tech-tag">SolidWorks</span>
+            <span class="tech-tag">Siemens Star CCM+ CFD</span>
+            <span class="tech-tag">MATLAB</span>
+          </div>
+        </div>
+
+        <div class="project-media">
+          <div class="image-grid-8">
+            <img src="images/inletduct.png" alt="FSAE Inlet Cooling Duct CAD" class="grid-img" />
+            <img src="images/outletduct.png" alt="FSAE Oulet Fan + Cooling Duct CAD" class="grid-img" />
+            <img src="images/fancurve.png" alt="Fan Curves" class="grid-img" />
+            <img src="images/segmentcfd.png" alt="Cell Segment CFD class="grid-img" />
+            <img src="images/ductcfd.png" alt="Duct CFD" class="grid-img" />
+            <img src="images/meshtesting.png" alt="Hydrophobic Mesh Testing" class="grid-img" />
+            <img src="images/motortestbench.png" alt="Motor Test Bench" class="grid-img" />
+            <img src="images/motor bench.jpeg" alt="Motor on Motor Test Bench" class="grid-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Capstone Burger Robot (UPDATED: 1 Image, 3 Videos) -->
+      <div class="project-card">
+        <div>
+          <h3>Autonomous Burger Assembly/Delivery Robot - UCLA Capstone</h3>
+          <p>Built and programmed an autonomous differential-drive robot to perform LiDAR-based course navigation, computer vision-guided customer recognition, and mechanical manipulation for burger assembly that ranked first in the capstone class.</p>
+          
+          <div class="tags-container">
+            <span class="tech-tag">ROS2</span>
+            <span class="tech-tag">LiDAR</span>
+            <span class="tech-tag">Robotics</span>
+          </div>
+        </div>
+
         <div class="project-media">
           <img src="images/burger-robot.jpg" alt="Autonomous Burger Assembly Robot Hardware" class="project-img" />
           
@@ -91,27 +151,36 @@
             Your browser does not support the video tag.
           </video>
 
-          <video controls class="project-video-2">
+          <video controls class="project-video">
             <source src="videos/facial_robot_demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <video controls class="project-video">
+            <source src="videos/burgerassembly.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
 
-      <!-- Project 3: Trash-Catching Robot -->
+      <!-- Project 6: Trash-Catching Robot (UPDATED: 2 Images, 1 Video) -->
       <div class="project-card">
-        <h3>Autonomous Trash-Catching Robot</h3>
-        <p>Building a trash-catching robot where the trashcan is mounted on a linear rail and 2D camera feedback triggers Arduino stepper motor control based on computer vision motion tracking to catch crumpled trash. Currently completed motor selection, mechanical and electric circuit design, FSM-based control programming structure, bridging to Stanford cluster for Linux compute, and ROS2 environment setup with Podman containers.</p>
-        
-        <div class="tags-container">
-          <span class="tech-tag">ROS2</span>
-          <span class="tech-tag">Computer Vision</span>
-          <span class="tech-tag">Robotics</span>
+        <div>
+          <h3>Autonomous Trash-Catching Robot</h3>
+          <p>Building a trash-catching robot where the trashcan is mounted on a linear rail and 2D camera feedback triggers Arduino stepper motor control based on computer vision motion tracking to catch crumpled trash. Currently completed motor selection, mechanical and electric circuit design, FSM-based control programming structure, bridging to Stanford cluster for Linux compute, and ROS2 environment setup with Podman containers.</p>
+          
+          <div class="tags-container">
+            <span class="tech-tag">ROS2</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Robotics</span>
+          </div>
         </div>
 
-        <!-- Media Section -->
         <div class="project-media">
-          <img src="images/trash-robot-cad.jpg" alt="Trash-Catching Robot Linear Rail Design" class="project-img" />
+          <div class="image-grid-2">
+            <img src="images/trash-robot-cad.jpg" alt="Trash-Catching Robot Linear Rail Design" class="grid-img" />
+            <img src="images/trash-robot-hardware.jpg" alt="Circuitry and Hardware Setup" class="grid-img" />
+          </div>
           
           <video controls class="project-video">
             <source src="videos/trash-robot-cv.mp4" type="video/mp4" />
@@ -142,7 +211,7 @@
       <h3>Harbinger Motors Intern Slideshow</h3>
       <p>Slide deck detailing projects and results:</p>
       <div class="pdf-viewer">
-        <iframe src="Sanjith Final Internship Presentation.pdf" width="100%" height="450px"></iframe>
+        <iframe src="Sanjith%20Final%20Internship%20Presentation.pdf" width="100%" height="450px"></iframe>
       </div>
     </div>
 
@@ -150,7 +219,7 @@
       <h3>Rivian Co-op Slideshow</h3>
       <p>Slide deck detailing projects and results:</p>
       <div class="pdf-viewer">
-        <iframe src="Sanjith Menon - Final Co-op Presentation.pdf" width="100%" height="450px"></iframe>
+        <iframe src="Sanjith%20Menon%20-%20Final%20Co-op%20Presentation.pdf" width="100%" height="450px"></iframe>
       </div>
     </div>
     
@@ -161,9 +230,9 @@
     <h2>Contact</h2>
     <p>Connect with me for engineering inquiries or project collaborations:</p>
     <div class="contact-links">
-      <a href="mailto:your.email@stanford.edu" class="contact-btn">Email Me</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-btn">LinkedIn</a>
-      <a href="https://github.com/yourusername" target="_blank" class="contact-btn">GitHub</a>
+      <a href="sanjith@stanford.edu" class="contact-btn">Email Me</a>
+      <a href="https://www.linkedin.com/in/sanjith-menon-a75515290" target="_blank" class="contact-btn">LinkedIn</a>
+      <a href="https://github.com/Sanjith1009" target="_blank" class="contact-btn">GitHub</a>
     </div>
   </section>
 
